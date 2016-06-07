@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Entrando a wikipedia]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17758" started-at="2016-05-31T18:46:29Z" finished-at="2016-05-31T18:46:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17758" started-at="2016-05-31T18:46:29Z" finished-at="2016-05-31T18:46:46Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="before" is-config="true" duration-ms="5549" started-at="2016-05-31T15:46:29Z" finished-at="2016-05-31T15:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="wikipediaSearch()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="wikipediaSearch" duration-ms="6023" started-at="2016-05-31T15:46:34Z" finished-at="2016-05-31T15:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wikipediaSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="after" is-config="true" duration-ms="694" started-at="2016-05-31T15:46:40Z" finished-at="2016-05-31T15:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="before" is-config="true" duration-ms="4892" started-at="2016-05-31T15:46:41Z" finished-at="2016-05-31T15:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="wikipediaSearchFailing()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="wikipediaSearchFailing" duration-ms="128" started-at="2016-05-31T15:46:46Z" finished-at="2016-05-31T15:46:46Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"searchInput"}
+Command duration or timeout: 97 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AR-IT01241', ip: '172.28.125.195', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ded17e4-bbec-4e97-8df5-5e956b44282d
+*** Element info: {Using=id, value=searchInput}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"searchInput"}
+Command duration or timeout: 97 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AR-IT01241', ip: '172.28.125.195', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ded17e4-bbec-4e97-8df5-5e956b44282d
+*** Element info: {Using=id, value=searchInput}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.globant.training.pages.HomePage.search(HomePage.java:25)
+	at com.globant.training.tests.Tests.wikipediaSearchFailing(Tests.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"searchInput"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AR-IT01241', ip: '172.28.125.195', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/AGUSTI~1.DIE/AppData/Local/Temp/anonymous2991858262976176713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/AGUSTI~1.DIE/AppData/Local/Temp/anonymous2991858262976176713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/AGUSTI~1.DIE/AppData/Local/Temp/anonymous2991858262976176713webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/AGUSTI~1.DIE/AppData/Local/Temp/anonymous2991858262976176713webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/AGUSTI~1.DIE/AppData/Local/Temp/anonymous2991858262976176713webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Entrando a wikipedia]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- wikipediaSearchFailing -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@51081592]" name="after" is-config="true" duration-ms="452" started-at="2016-05-31T15:46:46Z" finished-at="2016-05-31T15:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
