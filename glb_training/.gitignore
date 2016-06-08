@@ -1,6 +1,7 @@
 /target/
 
 .metadata
+test-output/
 bin/
 tmp/
 *.tmp
