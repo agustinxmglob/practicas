@@ -1,0 +1,18 @@
+/target/
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# JDT-specific (Eclipse Java Development Tools)
+*.launch
+.classpath
+.project
